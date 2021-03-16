@@ -4,6 +4,7 @@
     <title>Bee Kim</title>
     <link rel="stylesheet" href="style.css" />
     <script>
+        // source: https://stackoverflow.com/questions/53411569/html-css-customise-tabs-or-button-groups-with-images
         function toggleTab(element, tabname) {
             var tabPanels = $('.panel');
             for (var i = 0; i < tabPanels.length; i++) {
@@ -11,13 +12,6 @@
             }
 
             $('#' + tabname).css('display', 'block');
-
-            var tabButtons = $('.button');
-            for (var i = 0; i < tabButtons.length; i++) {
-                $(tabButtons[i]).removeClass($(tabButtons[i]) + '_toggled');
-            }
-            
-            $(element).addClass(tabname + '_toggled');
         }
     </script>
 </head>
@@ -25,37 +19,37 @@
 <body style="background-color:#ECECEC;">
     <div id="sidebar">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <div class="about_me_btn" onclick="toggleTab(this, 'about_me')"></div>
-            <div class="education_btn" onclick="toggleTab(this, 'education')"></div>
-            <div class="work_btn" onclick="toggleTab(this, 'work')"></div>
-            <div class="skills_btn" onclick="toggleTab(this, 'skills')"></div>
+            <div class= "button" id="about_me_btn" onclick="toggleTab(this, 'about_me')"></div>
+            <div class= "button" id="education_btn" onclick="toggleTab(this, 'education')"></div>
+            <div class= "button" id="work_btn" onclick="toggleTab(this, 'work')"></div>
+            <div class= "button" id="skills_btn" onclick="toggleTab(this, 'skills')"></div>
     </div>
 
     <div id="about_me" class="panel">
         <div class="body_img">
             <img src="images/about_me.png" width="68%">
-            <textarea class="body_text">this is about me text</textarea>
+            <p class="body_text">this is about me text</p>
         </div>
     </div>
 
     <div id="education" class="panel" style="display:none">
         <div class="body_img">
             <img src="images/education.png" width="68%">
-            <textarea class="body_text">this is education text</textarea>
+            <p class="body_text">this is education text</p>
         </div>
     </div>
 
     <div id="work" class="panel" style="display:none">
         <div class="body_img">
             <img src="images/work.png" width="68%">
-            <textarea class="body_text">this is work text</textarea>
+            <p class="body_text">this is work text</p>
         </div>
     </div>
 
     <div id="skills" class="panel" style="display:none">
         <div class="body_img">
             <img src="images/skills.png" width="68%">
-            <textarea class="body_text">this is skills text</textarea>
+            <p class="body_text">this is skills text</p>
         </div>
     </div>
 </body>

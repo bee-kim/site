@@ -42,69 +42,52 @@
       border: none;
   }
 
-  .about_me_btn {
+  .button {
     position: absolute;
     cursor: pointer;
     z-index:1000;
     height:10%;
     width:60%;
-    top:50%;
     left:15%;
+  }
+
+  #about_me_btn {
+    top:50%;
     background-image: url("images/about_me_button.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  .education_btn {
-    position: absolute;
-    cursor: pointer;
-    z-index:1000;
-    height:10%;
-    width:60%;
+  #education_btn {
     top:60.5%;
-    left:15%;
     background-image: url("images/education_button.png");
     background-repeat: no-repeat;
     background-size: 100%;
 
   }
-  .work_btn {
-    position: absolute;
-    cursor: pointer;
-    z-index:1000;
-    height:10%;
-    width:60%;
+  #work_btn {
     top:71%;
-    left:15%;
     background-image: url("images/work_button.png");
     background-repeat: no-repeat;
     background-size: 100%;
 
   }
-  .skills_btn {
-    position: absolute;
-    cursor: pointer;
-    z-index:1000;
-    height:10%;
-    width:60%;
+  #skills_btn {
     top:81.5%;
-    left:15%;
     background-image: url("images/skills_button.png");
     background-repeat: no-repeat;
     background-size: 100%;
 
   }
   
-  /* This class will only apply to the div of the active tab panel */
-  .about_me_toggled {
-    /* Background-color can also be background-image */
+  #about_me_btn:hover {
     background-image: url("anims/ab_toggle.gif");
   }
-  .education_toggled {
+  #education_btn:hover {
       background-image: url("anims/ed_toggle.gif");
   }
-  .work_toggled {
+  #work_btn:hover {
       background-image: url("anims/wk_toggle.gif");
   }
-  .skills_toggled {
+  #skills_btn:hover {
       background-image: url("anims/sk_toggle.gif");
   }
