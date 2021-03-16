@@ -1,0 +1,110 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #a9e0ff;
+    border-radius: 10px;
+  }
+
+  #sidebar {
+      position: relative;
+      float: left;
+      width: 25%;
+      height: 740px;
+      background-image: url("images/image.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+  }
+  
+  .body_img {
+      position: relative;
+  }
+
+  .body_text {
+      position: absolute;
+      font-size: 110%;
+      font-family: Calibri;
+      left: 31%;
+      top: 16%;
+      width: 54%;
+      height: 65%;
+      background: none;
+      border: none;
+  }
+
+  .about_me_btn {
+    position: absolute;
+    cursor: pointer;
+    z-index:1000;
+    height:10%;
+    width:60%;
+    top:50%;
+    left:15%;
+    background-image: url("images/about_me_button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .education_btn {
+    position: absolute;
+    cursor: pointer;
+    z-index:1000;
+    height:10%;
+    width:60%;
+    top:60.5%;
+    left:15%;
+    background-image: url("images/education_button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+  .work_btn {
+    position: absolute;
+    cursor: pointer;
+    z-index:1000;
+    height:10%;
+    width:60%;
+    top:71%;
+    left:15%;
+    background-image: url("images/work_button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+  .skills_btn {
+    position: absolute;
+    cursor: pointer;
+    z-index:1000;
+    height:10%;
+    width:60%;
+    top:81.5%;
+    left:15%;
+    background-image: url("images/skills_button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+  
+  /* This class will only apply to the div of the active tab panel */
+  .about_me_toggled {
+    /* Background-color can also be background-image */
+    background-image: url("anims/ab_toggle.gif");
+  }
+  .education_toggled {
+      background-image: url("anims/ed_toggle.gif");
+  }
+  .work_toggled {
+      background-image: url("anims/wk_toggle.gif");
+  }
+  .skills_toggled {
+      background-image: url("anims/sk_toggle.gif");
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bee Kim</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function toggleTab(element, tabname) {
+            var tabPanels = $('.panel');
+            for (var i = 0; i < tabPanels.length; i++) {
+                $(tabPanels[i]).css('display', 'none');
+            }
+
+            $('#' + tabname).css('display', 'block');
+
+            var tabButtons = $('.button');
+            for (var i = 0; i < tabButtons.length; i++) {
+                $(tabButtons[i]).removeClass($(tabButtons[i]) + '_toggled');
+            }
+            
+            $(element).addClass(tabname + '_toggled');
+        }
+    </script>
+</head>
+
+<body style="background-color:#ECECEC;">
+    <div id="sidebar">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <div class="about_me_btn" onclick="toggleTab(this, 'about_me')"></div>
+            <div class="education_btn" onclick="toggleTab(this, 'education')"></div>
+            <div class="work_btn" onclick="toggleTab(this, 'work')"></div>
+            <div class="skills_btn" onclick="toggleTab(this, 'skills')"></div>
+    </div>
+
+    <div id="about_me" class="panel">
+        <div class="body_img">
+            <img src="images/about_me.png" width="68%">
+            <textarea class="body_text">this is about me text</textarea>
+        </div>
+    </div>
+
+    <div id="education" class="panel" style="display:none">
+        <div class="body_img">
+            <img src="images/education.png" width="68%">
+            <textarea class="body_text">this is education text</textarea>
+        </div>
+    </div>
+
+    <div id="work" class="panel" style="display:none">
+        <div class="body_img">
+            <img src="images/work.png" width="68%">
+            <textarea class="body_text">this is work text</textarea>
+        </div>
+    </div>
+
+    <div id="skills" class="panel" style="display:none">
+        <div class="body_img">
+            <img src="images/skills.png" width="68%">
+            <textarea class="body_text">this is skills text</textarea>
+        </div>
+    </div>
+</body>
